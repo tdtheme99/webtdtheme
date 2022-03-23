@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm</title>
+
+    <!-- The Meta SEO -->
+    <meta name=”title” content=”mô tả” />
+    <meta name=”description” content=”mô tả” />
+    <!-- Link Favicon -->
+    <link rel="icon" href="./img/favicon_td.png" type="image/png" sizes="256x256">
+    <!-- Link Vendor -->
+    <link rel="stylesheet" type="text/css" href="./vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./vendor/slick/slick-theme.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+</head>
+
+<body>
+
+    <div class="app">
+        <div class="container">
+            <section class="header">
+                <!-- Navbar -->
+                <div class="navbar">
+                    <div class="box__logo">
+                        <a href="./index.html"><img src="./img/logo_td.png" alt="logo" class="logo"></a>
+                    </div>
+                    <div class="box__nav-left">
+                        <ul class="box__nav-left-list">
+                            <li class="box__nav-left-item dropdown">
+                                <a href="#" class="box__nav-link">
+                                    Sản phẩm
+                                    <i class="fas fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="./san-pham.html">Tất cả giao diện</a></li>
+                                    <li><a href="#">Web BĐS</a></li>
+                                    <li><a href="#">Web TMĐT</a></li>
+                                    <li><a href="#">Web DL-KS</a></li>
+                                    <li><a href="#">Web Foods</a></li>
+                                    <li><a href="#">Web Fashions</a></li>
+                                    <li><a href="#">Hệ thống</a></li>
+                                    <li><a href="#">Quản lý</a></li>
+                                </ul>
+                            </li>
+                            <li class="box__nav-left-item dropdown">
+                                <a href="#" class="box__nav-link">
+                                    Dịch vụ
+                                    <i class="fas fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Thiết kế Web</a></li>
+                                    <li><a href="#">SEO content</a></li>
+                                </ul>
+                            </li>
+                            <li class="box__nav-left-item dropdown">
+                                <a href="#" class="box__nav-link">
+                                    Định giá
+                                    <i class="fas fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Theo giao diện</a></li>
+                                    <li><a href="#">Theo tính năng</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box__nav-right">
+                        <div class="box__nav-right-search">
+                            <input type="search" class="input__search">
+                            <i class="icon-search fas fa-search"></i>
+                        </div>
+                        <div class="box__nav-right-auth">
+                            <a class="auth-login">
+                                Đăng nhập
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mobile Navbar -->
+                <div class="mobile__menu">
+                    <div class="mobile__menu-logo">
+                        <a href="./index.html"><img src="./img/logo_td.png" alt="logo" class="logo"></a>
+                    </div>
+                    <div class="mobile__menu-nav">
+                        <label for="mobile__menu-input" id="overlay"></label>
+                        <input type="checkbox" hidden class="mobile__input" id="mobile__menu-input">
+                        <label for="mobile__menu-input" class="mobile__menu--btn">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                        <ul class="mobile__menu-nav-list">
+                            <label for="mobile__menu-input" class="mobile__menu--close">
+                                <i class="fas fa-times"></i>
+                            </label>
+                            <li class="mobile__menu-nav-item dropdown">
+                                <a href="#" class="mobile__menu-nav-link">
+                                    <i class="fa-solid fa-file-code icon-menu"></i> Sản phẩm
+                                    <i class="fas fa-angle-down icon-dropdown"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="./san-pham.html">Tất cả giao diện</a></li>
+                                    <li><a href="#">Web BĐS</a></li>
+                                    <li><a href="#">Web TMĐT</a></li>
+                                    <li><a href="#">Web DL-KS</a></li>
+                                    <li><a href="#">Web Foods</a></li>
+                                    <li><a href="#">Web Fashions</a></li>
+                                    <li><a href="#">Hệ thống</a></li>
+                                    <li><a href="#">Quản lý</a></li>
+                                </ul>
+                            </li>
+                            <li class="mobile__menu-nav-item dropdown">
+                                <a href="#" class="mobile__menu-nav-link">
+                                    <i class="fa-solid fa-palette icon-menu"></i> Dịch vụ
+                                    <i class="fas fa-angle-down icon-dropdown"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Thiết kế Web</a></li>
+                                    <li><a href="#">SEO content</a></li>
+                                </ul>
+                            </li>
+                            <li class="mobile__menu-nav-item dropdown">
+                                <a href="#" class="mobile__menu-nav-link">
+                                    <i class="fa-solid fa-list-check icon-menu"></i> Định giá
+                                    <i class="fas fa-angle-down icon-dropdown"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Theo giao diện</a></li>
+                                    <li><a href="#">Theo tính năng</a></li>
+                                </ul>
+                            </li>
+                            <li class="mobile__menu-nav-item">
+                                <a href="#" class="mobile__menu-nav-link">
+                                    <i class="fa-solid fa-arrow-right-to-bracket icon-menu"></i> Đăng nhập
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Banner -->
+                <div class="banner__product">
+                    <div class="banner__center">
+                        <h1 class="banner__center-title">
+                            NƠI CUNG CẤP GIẢI PHÁP XÂY DỰNG HỆ THỐNG WEBSITE
+                        </h1>
+
+                        <div class="banner__center-form">
+                            <form action="#">
+
+                                <div class="input-search">
+                                    <input type="text" name="" id="" placeholder="Nhu cầu của bạn là gì ?">
+                                </div>
+                                <button type="submit" class="btn btn--secondary">Tìm kiếm</button>
+
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="product">
+                <h2 class="product__title">
+                    CHO TÔI BIẾT LỰA CHỌN CỦA BẠN
+                </h2>
+
+                <div class="product__group">
+
+                    <div class="product__category">
+                        <div class="product__category-item">
+
+                            <label for="product__category-bds">
+                                <input type="checkbox" name="product__category-bds" class="product__category-item-checkbox">
+                                <a href="#">Bất động sản</a>
+                            </label>
+                            <div class="product__category-item-img">
+                                <img src="./img/bds.png" alt="img__category">
+                            </div>
+                        </div>
+                        <div class="product__category-item">
+
+                            <label for="product__category-tmdt">
+                                <input type="checkbox" name="product__category-tmdt" class="product__category-item-checkbox">
+                                <a href="#">Thương mại điện tử</a>
+                            </label>
+                            <div class="product__category-item-img">
+                                <img src="./img/tmdt.png" alt="img__category">
+                            </div>
+                        </div>
+                        <div class="product__category-item">
+
+                            <label for="product__category-drink">
+                                <input type="checkbox" name="product__category-drink" class="product__category-item-checkbox">
+                                <a href="#">Thức ăn</a>
+                            </label>
+                            <div class="product__category-item-img">
+                                <img src="./img/drink.png" alt="img__category">
+                            </div>
+                        </div>
+                        <div class="product__category-item">
+
+                            <label for="product__category-fashion">
+                                <input type="checkbox" name="product__category-fashion" class="product__category-item-checkbox">
+                                <a href="#">Thời trang</a>
+                            </label>
+                            <div class="product__category-item-img">
+                                <img src="./img/fashion.png" alt="img__category">
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="product__group-title">
+                        Tìm thấy 150 kết quả
+                    </h3>
+                    <div class="product__group-list">
+                        <div class="product__group-list-row">
+                            <div class="product__group-list-column">
+                                <div class="img__box">
+                                    <img src="./img/Screenshot-TD Theme.png" alt="img__product-card" class="img__product-card">
+                                    <div class="product__view-card">
+                                        <a href="./chi-tiet-san-pham.html"><i class="fas fa-eye"></i> Xem chi tiết</a>
+                                    </div>
+                                </div>
+
+                                <div class="desc__box">
+                                    <h4 class="product__title-card"><a href="./chi-tiet-san-pham.html">Mẫu bất động sản - 001</a></h4>
+                                    <div class="product__btn-buy-card">
+                                        <a href="./chi-tiet-san-pham.html" class="btn btn--primary btn--buy-now">Mua ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__group-list-column">
+                                <div class="img__box">
+                                    <img src="./img/Screenshot-TD Theme.png" alt="img__product-card" class="img__product-card">
+                                    <div class="product__view-card">
+                                        <a href="#"><i class="fas fa-eye"></i> Xem chi tiết</a>
+                                    </div>
+                                </div>
+
+                                <div class="desc__box">
+                                    <h4 class="product__title-card"><a href="#">Mẫu bất động sản - 002</a></h4>
+                                    <div class="product__btn-buy-card">
+                                        <a href="#" class="btn btn--primary btn--buy-now">Mua ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__group-list-column">
+                                <div class="img__box">
+                                    <img src="./img/Screenshot-TD Theme.png" alt="img__product-card" class="img__product-card">
+                                    <div class="product__view-card">
+                                        <a href="#"><i class="fas fa-eye"></i> Xem chi tiết</a>
+                                    </div>
+                                </div>
+
+                                <div class="desc__box">
+                                    <h4 class="product__title-card"><a href="#">Mẫu bất động sản - 003</a></h4>
+                                    <div class="product__btn-buy-card">
+                                        <a href="#" class="btn btn--primary btn--buy-now">Mua ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <section class="footer">
+                <div class="footer__container">
+                    <div class="footer__info">
+                        <h4 class="footer__title">
+                            GIỚI THIỆU
+                        </h4>
+                        <div class="footer__desc">
+                            <p>
+                                Chúng tôi lập nên để chia sẻ đam mê của tôi và nếu được thì có thể giúp một ai đó làm được những việc cùng sở thích như tôi và cùng hợp tác phát triển hơn nữa.
+                            </p>
+                        </div>
+                        <div class="footer__form">
+                            <h4 class="footer__form-title">
+                                KẾT NỐI VỚI CHÚNG TÔI
+                            </h4>
+                            <form action="#" method="post">
+                                <div class="footer__form-input">
+                                    <input type="text" name="" id="" placeholder="Nhập SĐT của bạn" class='footer__form-input-number'>
+                                </div>
+                                <input type="submit" value="Gửi đi" class="btn btn--secondary footer__form-input-submit">
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="footer__group">
+
+                        <div class="footer__list">
+                            <div class="footer__item">
+                                <h4 class="footer__title">
+                                    LIÊN HỆ
+                                </h4>
+                                <div class="footer__item-desc">
+                                    <p>Hotline: <a class='footer__item-desc-link' href="tel:+84933934123">0933934123</a></p>
+                                    <p>Email: <a class='footer__item-desc-link' href="mailto:tdtheme@gmail.com">Tdtheme@gmail.com</a></p>
+                                    <p>Địa chỉ: <a class='footer__item-desc-link' href="#">Quận 8, Tp.HCM</a></p>
+                                    <p>Zalo: <a class='footer__item-desc-link' href="https://zalo.me/0933934123">0933934123</a></p>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="footer__item">
+                                <h4 class="footer__title">
+                                    CHÍNH SÁCH
+                                </h4>
+                                <div class="footer__item-desc">
+                                    <p><a class='footer__item-desc-link' href="#">Support 24/24</a></p>
+                                    <p><a class='footer__item-desc-link' href="#">Thêm những tính năng yêu cầu</a></p>
+                                    <p><a class='footer__item-desc-link' href="#">Chính sách bảo hành</a></p>
+                                    <p><a class='footer__item-desc-link' href="#">Câu hỏi thường gặp</a></p>
+                                </div>
+                            </div>
+
+                            <div class="footer__item">
+                                <h4 class="footer__title">
+                                    SOCIAL NETWORK
+                                </h4>
+                                <div class="footer__item-desc">
+                                    <p><a class='footer__item-desc-link' href="#">Facebook</a></p>
+                                    <p><a class='footer__item-desc-link' href="#">Zalo</a></p>
+                                    <p><a class='footer__item-desc-link' href="#">Youtube</a></p>
+                                    <p><a class='footer__item-desc-link' href="#">Telegram</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-line"></div>
+                        <div class="footer__slogan">
+                            <img src="./img/logo_td.png" alt="logo_td" class="footer__slogan-logo">
+                            <p>Uy tín mang đến thương hiệu của chúng tôi, gửi bạn sự hài lòng tuyệt đối !</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+
+    <!-- JS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./vendor/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.custumer__img').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            // Show hide popover
+            $(".dropdown").click(function() {
+                $(this).find(".dropdown-menu").slideToggle("fast");
+            });
+        });
+        $(document).on("click", function(event) {
+            var $trigger = $(".dropdown");
+            if ($trigger !== event.target && !$trigger.has(event.target).length) {
+                $(".dropdown-menu").slideUp("fast");
+            }
+        });
+    </script>
+</body>
+
+</html>

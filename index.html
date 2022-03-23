@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD Theme</title>
+
+    <!-- The Meta SEO -->
+    <meta name=”title” content=”mô tả” />
+    <meta name=”description” content=”mô tả” />
+    <!-- Link Favicon -->
+    <link rel="icon" href="./img/favicon_td.png" type="image/png" sizes="256x256">
+    <!-- Link Vendor -->
+    <link rel="stylesheet" type="text/css" href="./vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./vendor/slick/slick-theme.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+
+    <div class="app">
+        <div class="container">
+            <section class="header">
+                <!-- Navbar -->
+                <div class="navbar">
+                    <div class="box__logo">
+                        <a href="./index.html"><img src="./img/logo_td.png" alt="logo" class="logo"></a>
+                    </div>
+                    <div class="box__nav-left">
+                        <ul class="box__nav-left-list">
+                            <li class="box__nav-left-item dropdown">
+                                <a href="#" class="box__nav-link">
+                                    Sản phẩm
+                                    <i class="fas fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="./san-pham.html">Tất cả giao diện</a></li>
+                                    <li><a href="#">Web BĐS</a></li>
+                                    <li><a href="#">Web TMĐT</a></li>
+                                    <li><a href="#">Web DL-KS</a></li>
+                                    <li><a href="#">Web Foods</a></li>
+                                    <li><a href="#">Web Fashions</a></li>
+                                    <li><a href="#">Hệ thống</a></li>
+                                    <li><a href="#">Quản lý</a></li>
+                                </ul>
+                            </li>
+                            <li class="box__nav-left-item dropdown">
+                                <a href="#" class="box__nav-link">
+                                    Dịch vụ
+                                    <i class="fas fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Thiết kế Web</a></li>
+                                    <li><a href="#">SEO content</a></li>
+                                </ul>
+                            </li>
+                            <li class="box__nav-left-item dropdown">
+                                <a href="#" class="box__nav-link">
+                                    Định giá
+                                    <i class="fas fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Theo giao diện</a></li>
+                                    <li><a href="#">Theo tính năng</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box__nav-right">
+                        <div class="box__nav-right-search">
+                            <input type="search" class="input__search">
+                            <i class="icon-search fas fa-search"></i>
+                        </div>
+                        <div class="box__nav-right-auth">
+                            <a class="auth-login">
+                                Đăng nhập
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mobile Navbar -->
+                <div class="mobile__menu">
+                    <div class="mobile__menu-logo">
+                        <a href="./index.html"><img src="./img/logo_td.png" alt="logo" class="logo"></a>
+                    </div>
+                    <div class="mobile__menu-nav">
+                        <label for="mobile__menu-input" id="overlay"></label>
+                        <input type="checkbox" hidden class="mobile__input" id="mobile__menu-input">
+                        <label for="mobile__menu-input" class="mobile__menu--btn">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                        <ul class="mobile__menu-nav-list">
+                            <label for="mobile__menu-input" class="mobile__menu--close">
+                                <i class="fas fa-times"></i>
+                            </label>
+                            <li class="mobile__menu-nav-item dropdown">
+                                <a href="#" class="mobile__menu-nav-link">
+                                    <i class="fa-solid fa-file-code icon-menu"></i> Sản phẩm
+                                    <i class="fas fa-angle-down icon-dropdown"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="./san-pham.html">Tất cả giao diện</a></li>
+                                    <li><a href="#">Web BĐS</a></li>
+                                    <li><a href="#">Web TMĐT</a></li>
+                                    <li><a href="#">Web DL-KS</a></li>
+                                    <li><a href="#">Web Foods</a></li>
+                                    <li><a href="#">Web Fashions</a></li>
+                                    <li><a href="#">Hệ thống</a></li>
+                                    <li><a href="#">Quản lý</a></li>
+                                </ul>
+                            </li>
+                            <li class="mobile__menu-nav-item dropdown">
+                                <a href="#" class="mobile__menu-nav-link">
+                                    <i class="fa-solid fa-palette icon-menu"></i> Dịch vụ
+                                    <i class="fas fa-angle-down icon-dropdown"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Thiết kế Web</a></li>
+                                    <li><a href="#">SEO content</a></li>
+                                </ul>
+                            </li>
+                            <li class="mobile__menu-nav-item dropdown">
+                                <a href="#" class="mobile__menu-nav-link">
+                                    <i class="fa-solid fa-list-check icon-menu"></i> Định giá
+                                    <i class="fas fa-angle-down icon-dropdown"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Theo giao diện</a></li>
+                                    <li><a href="#">Theo tính năng</a></li>
+                                </ul>
+                            </li>
+                            <li class="mobile__menu-nav-item">
+                                <a href="#" class="mobile__menu-nav-link">
+                                    <i class="fa-solid fa-arrow-right-to-bracket icon-menu"></i> Đăng nhập
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Banner -->
+                <div class="banner">
+                    <div class="banner__left">
+                        <h1 class="banner__left-title">
+                            NƠI CUNG CẤP GIẢI PHÁP XÂY DỰNG HỆ THỐNG WEBSITE
+                        </h1>
+                        <div class="banner__left-desc">
+                            <div class="banner__left-desc-1">
+                                <span>1</span>
+                                <p>
+                                    Chúng tôi ở đây để giúp doanh nghiệp trở nên dễ dàng và tối ưu hơn trong việc xây dựng hệ thống website chuẩn SEO
+                                </p>
+                            </div>
+                            <div class="banner__left-desc-2">
+                                <span>2</span>
+                                <p>
+                                    Ứng dụng công nghê mới, TD cam kết chặt chẽ hơn với mọi khách hàng khó tính
+                                </p>
+                            </div>
+                        </div>
+                        <div class="banner__left-form">
+                            <form action="#">
+
+                                <div class="input-email">
+                                    <input type="email" name="" id="" placeholder="Nhập mail của bạn">
+                                </div>
+                                <button type="submit" class="btn btn--secondary">Đăng ký</button>
+
+                            </form>
+                        </div>
+                    </div>
+                    <div class="banner__right">
+                        <img src="./img/img_banner.png" alt="img_banner">
+                    </div>
+                </div>
+                <div class="border-line"></div>
+                <!-- Info -->
+                <div class="info">
+                    <div class="info__mail">
+                        <i class="fas fa-paper-plane"></i>
+                        <a href="mailto:tdtheme@gmail.com">Tdtheme@gmail.com</a>
+                    </div>
+                    <div class="info__address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <a href="#">Quận 8, Hồ Chí Minh</a>
+                    </div>
+                    <div class="info__phone">
+                        <i class="fas fa-phone-volume"></i>
+                        <a href="tel:+84933934123">0933 934 123</a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="custumer">
+                <div class="custumer__img">
+                    <div>
+                        <img src="./img/LOGO_DIENNHIENWEB.png" alt="img-custumer">
+                    </div>
+                    <div>
+                        <img src="./img/SaiGonLand24H.png" alt="img-custumer">
+                    </div>
+                    <div>
+                        <img src="./img/logo-512.png" alt="img-custumer">
+                    </div>
+                    <div>
+                        <img src="./img/logo LYNseafood.png" alt="img-custumer">
+                    </div>
+                    <div>
+                        <img src="./img/logo.png" alt="img-custumer">
+                    </div>
+                    <div>
+                        <img src="./img/./LOGO HUUDATLAND.png" alt="img-custumer">
+                    </div>
+                    <div>
+                        <img src="./img/logo-nho.png" alt="img-custumer">
+                    </div>
+
+                </div>
+                <div class="custumer__img-mobile">
+                    <div>
+                        <img src="./img/LOGO_DIENNHIENWEB.png" alt="img-custumer">
+                    </div>
+                    <div>
+                        <img src="./img/SaiGonLand24H.png" alt="img-custumer">
+                    </div>
+                    <div>
+                        <img src="./img/logo-512.png" alt="img-custumer">
+                    </div>
+                    <div>
+                        <img src="./img/logo LYNseafood.png" alt="img-custumer">
+                    </div>
+                    <div>
+                        <img src="./img/logo.png" alt="img-custumer">
+                    </div>
+                    <div>
+                        <img src="./img/./LOGO HUUDATLAND.png" alt="img-custumer">
+                    </div>
+
+                </div>
+            </div>
+
+            <section class="working__process">
+                <h2 class="working__process-title">
+                    QUY TRÌNH LÀM VIỆC CỦA CHÚNG TÔI
+                </h2>
+                <div class="working__process-img">
+                    <img src="./img/img_group.png" alt="img_group">
+                </div>
+            </section>
+
+            <section class="service">
+                <section class="sla__service">
+                    <h2 class="sla__service-title">
+                        CAM KẾT CỦA CHÚNG TÔI VỚI BẠN
+                    </h2>
+                    <div class="sla__service-list">
+                        <div class="sla__service-item">
+                            <img src="./img/icon-phat_trien.png" alt="icon-sla__service">
+                            <h3 class="sla__service-list-title">
+                                Làm việc hiệu quả hơn
+                            </h3>
+                            <p class="sla__service-list-desc">
+                                Bất kể quy trình của bạn là gì, TD sẽ lập kế hoạch cụ thể để dữ mọi thứ được suôn sẻ
+                            </p>
+                        </div>
+                        <div class="sla__service-item">
+                            <img src="./img/icon-time.png" alt="icon-sla__service">
+                            <h3 class="sla__service-list-title">
+                                Cung cấp dịch vụ nhanh hơn
+                            </h3>
+                            <p class="sla__service-list-desc">
+                                Dựa vào quy trình của bạn, TD sẽ tối ưu hóa công đoạn để đưa ra một timeline phù hợp
+                            </p>
+                        </div>
+                        <div class="sla__service-item">
+                            <img src="./img/icon-rui_ro.png" alt="icon-sla__service">
+                            <h3 class="sla__service-list-title">
+                                Giảm thiếu rủi ro và chi phí
+                            </h3>
+                            <p class="sla__service-list-desc">
+                                Tự động hóa bảo mật và tuân thủ quy trình của bạn mà không làm ảnh hướng đến tốc độ hoặc chi phí
+                            </p>
+                        </div>
+
+                    </div>
+                </section>
+                <div class="border-line"></div>
+                <section class="package">
+                    <h2 class="package__title">
+                        GÓI DỊCH VỤ MỚI NHẤT
+                    </h2>
+                    <div class="package__group">
+
+                        <div class="package__item">
+                            <div class="package__group-basic">
+                                <h3 class="package__group-title">
+                                    Gói cơ bản
+                                </h3>
+                                <div class="package__group-line">
+                                    <div class="package__group-border-line"></div>
+                                    <img src="./img/Star.png" alt="img__star">
+                                </div>
+                                <p class="package__group-price">
+                                    999.000 VNĐ
+                                </p>
+                                <div class="package__group-desc">
+                                    <p>Thời gian giao hàng : 1-2 ngày</p>
+                                    <p>Giao diện có sẵn trong kho mẫu</p>
+                                    <p>Chức năng website chuyên nghiệp</p>
+                                    <p>Bàn giao đầy đủ source code</p>
+                                    <p>Cung cấp tài liệu hướng dẫn</p>
+                                    <p>Bảo hành 12 tháng</p>
+                                    <p>Hỗ trợ kỹ thuật 24/7/356</p>
+                                </div>
+                                <div class="package__group-btn">
+                                    <div class="package__group-btn-line"></div>
+                                    <a href="#" class="package__group-btn--register">
+                                        <button>
+                                        Đăng ký ngay
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package__item">
+                            <h3 class="package__group-title bg--popular">
+                                Gói phổ biến
+                            </h3>
+                            <div class="package__group-popular">
+
+                                <p class="package__group-price">
+                                    2.999.000 VNĐ
+                                </p>
+                                <div class="package__group-desc">
+                                    <p>Thời gian giao hàng : 3-5 ngày</p>
+                                    <p>Giao diện có sẵn trong kho mẫu và chỉnh sửa</p>
+                                    <p>Chuẩn SEO 100%</p>
+                                    <p>Chức năng website chuyên nghiệp</p>
+                                    <p>Bàn giao đầy đủ source code</p>
+                                    <p>Cung cấp tài liệu hướng dẫn</p>
+                                    <p>Bảo hành 12 tháng</p>
+                                    <p>Hỗ trợ kỹ thuật 24/7/356</p>
+                                </div>
+                                <div class="package__group-btn">
+                                    <div class="package__group-btn-line"></div>
+                                    <a href="#" class="package__group-btn--register btn--popular">
+                                        <button>
+                                        Đăng ký ngay
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package__item">
+                            <div class="package__group-special">
+                                <h3 class="package__group-title">
+                                    Gói đặc biệt
+                                </h3>
+                                <div class="package__group-line">
+                                    <div class="package__group-border-line"></div>
+                                    <img src="./img/Star.png" alt="img__star">
+                                </div>
+                                <p class="package__group-price">
+                                    > 6.999.000 VNĐ
+                                </p>
+                                <div class="package__group-desc">
+                                    <p>Thời gian giao hàng : 7-10 ngày</p>
+                                    <p>Giao diện thiết kế theo yêu cầu</p>
+                                    <p>Tối ưu SEO 100%</p>
+                                    <p>Bàn giao đầy đủ source code</p>
+                                    <p>Cung cấp tài liệu hướng dẫn</p>
+                                    <p>Bảo hành 12 tháng</p>
+                                    <p>Hỗ trợ kỹ thuật 24/7/356</p>
+                                </div>
+                                <div class="package__group-btn">
+                                    <div class="package__group-btn-line"></div>
+                                    <a href="#" class="package__group-btn--register">
+                                        <button>
+                                        Đăng ký ngay
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </section>
+
+            <!-- Footer -->
+            <section class="footer">
+
+                <div class="footer__container">
+                    <div class="footer__info">
+                        <h4 class="footer__title">
+                            GIỚI THIỆU
+                        </h4>
+                        <div class="footer__desc">
+                            <p>
+                                Chúng tôi lập nên để chia sẻ đam mê của tôi và nếu được thì có thể giúp một ai đó làm được những việc cùng sở thích như tôi và cùng hợp tác phát triển hơn nữa.
+                            </p>
+                        </div>
+                        <div class="footer__form">
+                            <h4 class="footer__form-title">
+                                KẾT NỐI VỚI CHÚNG TÔI
+                            </h4>
+                            <form action="#" method="post">
+                                <div class="footer__form-input">
+                                    <input type="text" name="" id="" placeholder="Nhập SĐT của bạn" class='footer__form-input-number'>
+                                </div>
+                                <input type="submit" value="Gửi đi" class="btn btn--secondary footer__form-input-submit">
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="footer__group">
+
+                        <div class="footer__list">
+                            <div class="footer__item">
+                                <h4 class="footer__title">
+                                    LIÊN HỆ
+                                </h4>
+                                <div class="footer__item-desc">
+                                    <p>Hotline: <a class='footer__item-desc-link' href="tel:+84933934123">0933934123</a></p>
+                                    <p>Email: <a class='footer__item-desc-link' href="mailto:tdtheme@gmail.com">Tdtheme@gmail.com</a></p>
+                                    <p>Địa chỉ: <a class='footer__item-desc-link' href="#">Quận 8, Tp.HCM</a></p>
+                                    <p>Zalo: <a class='footer__item-desc-link' href="https://zalo.me/0933934123">0933934123</a></p>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="footer__item">
+                                <h4 class="footer__title">
+                                    CHÍNH SÁCH
+                                </h4>
+                                <div class="footer__item-desc">
+                                    <p><a class='footer__item-desc-link' href="#">Support 24/24</a></p>
+                                    <p><a class='footer__item-desc-link' href="#">Thêm những tính năng yêu cầu</a></p>
+                                    <p><a class='footer__item-desc-link' href="#">Chính sách bảo hành</a></p>
+                                    <p><a class='footer__item-desc-link' href="#">Câu hỏi thường gặp</a></p>
+                                </div>
+                            </div>
+
+                            <div class="footer__item">
+                                <h4 class="footer__title">
+                                    SOCIAL NETWORK
+                                </h4>
+                                <div class="footer__item-desc">
+                                    <p><a class='footer__item-desc-link' href="#">Facebook</a></p>
+                                    <p><a class='footer__item-desc-link' href="#">Zalo</a></p>
+                                    <p><a class='footer__item-desc-link' href="#">Youtube</a></p>
+                                    <p><a class='footer__item-desc-link' href="#">Telegram</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-line"></div>
+                        <div class="footer__slogan">
+                            <img src="./img/logo_td.png" alt="logo_td" class="footer__slogan-logo">
+                            <p>Uy tín mang đến thương hiệu của chúng tôi, gửi bạn sự hài lòng tuyệt đối !</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+
+    <!-- JS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./vendor/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.custumer__img').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            // Show hide popover
+            $(".dropdown").click(function() {
+                $(this).find(".dropdown-menu").slideToggle("fast");
+            });
+        });
+        $(document).on("click", function(event) {
+            var $trigger = $(".dropdown");
+            if ($trigger !== event.target && !$trigger.has(event.target).length) {
+                $(".dropdown-menu").slideUp("fast");
+            }
+        });
+    </script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

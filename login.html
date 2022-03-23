@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Link Favicon -->
+    <link rel="icon" href="./img/favicon_td.png" type="image/png" sizes="256x256">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
+
+</head>
+
+<body style="
+    background: linear-gradient(109.98deg, #040D22 0.7%, #040D22 24.5%, #1C1C64 56.09%, #040D22 69.02%, #040D22 84.16%, #04275F 92.97%);
+    background-repeat: no-repeat;
+    background-size: cover;
+">
+
+    <div class="login__wrapper">
+        <form action="#" class="login__form">
+            <div class="logo">
+                <img src="./img/icon_td.png" alt="logo">
+            </div>
+            <h2>Đăng nhập</h2>
+            <div class="input__group">
+                <input type="text" name="loginUser" id="loginUser" required>
+                <label for="loginUser">
+                    User Name
+                </label>
+            </div>
+            <div class="input__group">
+                <input type="password" name="loginPassword" id="loginPassword" required>
+                <label for="loginPassword">
+                    Password
+                </label>
+            </div>
+            <input type="submit" value="Đăng nhập" class="btn btn--primary btn--submit">
+            <a href="#forgot-pw" class="forgot-pw">Quên mật khẩu?</a> <br><br>
+            <a href="#register" class="register">Đăng ký nếu chưa có tài khoản?</a>
+        </form>
+
+        <div id="forgot-pw">
+            <form action="#" class="login__form">
+                <a href="#" class="close">&times;</a>
+                <h2>Reset Password</h2>
+                <div class="input__group">
+                    <input type="email" name="email" id="email" required>
+                    <label for="email">
+                        Email
+                    </label>
+                </div>
+                <input type="submit" value="Gửi" class="btn btn--primary btn--submit">
+            </form>
+        </div>
+        <div id="register">
+            <form action="#" class="login__form">
+                <a href="#" class="close">&times;</a>
+                <h2>Đăng ký</h2>
+                <div class="input__group">
+                    <input type="text" name="registerUser" id="registerUser" required>
+                    <label for="registerUser">
+                        User Name
+                    </label>
+                </div>
+                <div class="input__group">
+                    <input type="password" name="registerPass" id="registerPass" required>
+                    <label for="registerPass">
+                        Password
+                    </label>
+                </div>
+                <div class="input__group">
+                    <input type="password" name="rePass" id="rePass" required>
+                    <label for="rePass">
+                        Nhập lại Password
+                    </label>
+                </div>
+                <input type="submit" value="Đăng ký" class="btn btn--primary btn--submit">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
